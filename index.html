@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AngularJS Controllers</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div ng-app="app"> <!--Tells Angular to look for a module called "app" when Angular starts up-->
+      <h1>AngularJS Controllers</h1>
+      <div ng-controller="MainCtrl">
+        <p>{{ message }}</p>
+      </div>
+    </div>
+  </body>
+</html>
