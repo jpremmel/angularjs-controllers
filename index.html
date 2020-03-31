@@ -8,10 +8,10 @@
   <body>
     <div ng-app="app"> <!--Tells Angular to look for a module called "app" when Angular starts up-->
       <h1>AngularJS Controllers</h1>
-      <div ng-controller="MainCtrl">
-        <p>{{ message }}</p>
-        <form ng-submit="updateMessage(newMessage)"> <!--The ng-submit directive contains an Angular expression that gets executed when the form gets submitted-->
-          <input type="text" ng-model="newMessage">
+      <div ng-controller="MainCtrl as main">
+        <p>{{ main.message }}</p>
+        <form ng-submit="main.updateMessage(main.newMessage)"> <!--The ng-submit directive contains an Angular expression that gets executed when the form gets submitted-->
+          <input type="text" ng-model="main.newMessage">
           <button type="submit">Update Message</button>
         </form>
       </div>
